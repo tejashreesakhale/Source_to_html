@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>source code</title>
+</head>
+<body>
+<pre><span style="color:purple">#include</span> <span style="color:skyblue">&lt;stdio.h&gt;</span>
+
+<span style="color:purple">#if</span> 1
+
+<span style="color:red">int</span> <span style="color:purple">main</span><span style="color:#DAA520 ">(</span><span style="color:#DAA520 ">)</span>
+<span style="color:#DAA520 ">{</span>
+    <span style="color:red">int</span> size, i, sum;
+    <span style="color:purple">printf</span><span style="color:#DAA520 ">(</span><span style="color:skyblue">"</span><span style="color:skyblue">enter a size : </span><span style="color:skyblue">"</span><span style="color:#DAA520 ">)</span>;
+    <span style="color:purple">scanf</span><span style="color:#DAA520 ">(</span><span style="color:skyblue">"</span><span style="color:skyblue"></span><span style="color:red">%d</span><span style="color:skyblue"></span><span style="color:skyblue">"</span>, &amp;size<span style="color:#DAA520 ">)</span>;
+
+    <span style="color:red">int</span> arr<span style="color:#DAA520 ">[</span>size<span style="color:#DAA520 ">]</span>;
+    <span style="color:purple">for</span> <span style="color:#DAA520 ">(</span>i = 0; i &lt; size; i++<span style="color:#DAA520 ">)</span>
+    <span style="color:purple">{</span>
+        <span style="color:purple">scanf</span><span style="color:#DAA520 ">(</span><span style="color:skyblue">"</span><span style="color:skyblue"></span><span style="color:red">%d</span><span style="color:skyblue"></span><span style="color:skyblue">"</span>, &amp;arr<span style="color:#DAA520 ">[</span>i<span style="color:#DAA520 ">]</span><span style="color:#DAA520 ">)</span>;
+    <span style="color:purple">}</span>
+    sum = 0;
+    <span style="color:purple">for</span> <span style="color:#DAA520 ">(</span>i = 0; i &lt; size; i++<span style="color:#DAA520 ">)</span>
+    <span style="color:purple">{</span>
+        sum = sum + arr<span style="color:#DAA520 ">[</span>i<span style="color:#DAA520 ">]</span>;
+        arr<span style="color:#DAA520 ">[</span>i<span style="color:#DAA520 ">]</span> = sum;
+    <span style="color:purple">}</span>
+    <span style="color:purple">for</span> <span style="color:#DAA520 ">(</span>i = 0; i &lt; size; i++<span style="color:#DAA520 ">)</span>
+    <span style="color:purple">{</span>
+        <span style="color:purple">printf</span><span style="color:#DAA520 ">(</span><span style="color:skyblue">"</span><span style="color:skyblue"></span><span style="color:red">%d</span><span style="color:skyblue"> </span><span style="color:skyblue">"</span>, arr<span style="color:#DAA520 ">[</span>i<span style="color:#DAA520 ">]</span><span style="color:#DAA520 ">)</span>;
+    <span style="color:purple">}</span>
+
+    <span style="color:purple">return</span> 0;
+<span style="color:#DAA520 ">}</span>
+<span style="color:purple">#endif</span></pre>
+</body>
+</html>
